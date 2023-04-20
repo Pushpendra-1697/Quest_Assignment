@@ -3,12 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import { backend_url } from './BackendURL';
 import { Box, Heading, useToast, Text } from '@chakra-ui/react';
 import jwt_decode from "jwt-decode";
+import { addUser } from '../redux/Users/user.action';
+import { useDispatch } from 'react-redux';
 
 
 const Login = () => {
   const navigate = useNavigate();
   const toast = useToast();
   const [user, setUser] = useState(null);
+  const dispatch = useDispatch();
 
   /*google login*/
   const handleCallbackResponse = (response) => {
@@ -39,11 +42,12 @@ const Login = () => {
     const { name, email, picture } = user;
     localStorage.setItem('name', name);
     let payload = { name, email, picture };
+    dispatch(addUser(payload));
     console.log(payload);
     navigate('/users');
   };
 
-  
+
 
   return (
     <Box style={{ textAlign: 'center' }}>
