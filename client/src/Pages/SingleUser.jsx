@@ -42,12 +42,10 @@ const SingleUser = () => {
             </Box>}
 
             <Container textAlign={'center'} w="95%" boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px" padding={"10px"} borderRadius={"10px"} mt={["15%", "15%", "5%"]}>
-
                 <Img w='100%' src={picture} alt={name} />
                 <Heading m='1% 0' fontSize={'22px'}>Username: {name}</Heading>
                 <Text>Email: {email}</Text>
                 <Text mt='1%'>Login Time: {createdAt}</Text>
-
             </Container>
         </>
     );

@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import { Navigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux'
 import { getUsers } from '../redux/Users/user.action';
 import { Alert, AlertIcon, Box } from '@chakra-ui/react';
 import { BiLoaderCircle } from "react-icons/bi";
 import UserList from '../Components/UserList';
+import { Navigate } from 'react-router-dom';
 
 const Users = () => {
   const { loading, error, users } = useSelector((store) => store.userManager);
