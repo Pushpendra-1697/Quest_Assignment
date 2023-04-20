@@ -36,7 +36,7 @@ const Navbar = () => {
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                     <Link to="/"> <Image className='icon' w={"16px"} src="./logo.jpg" alt='logo' /> </Link>
 
-                    <Text><Link className='icon' to="/">Login</Link></Text>
+                    <Text><Link className='icon' to="/users">Users</Link></Text>
                     <Link className='icon' to="/posts"><i class="fa fa-user icon">Posts</i></Link>
 
                     <Flex alignItems={'center'}>
@@ -75,6 +75,7 @@ const Navbar = () => {
                                     <MenuDivider />
                                     <MenuItem><Link to="/" className='Link'>Login</Link></MenuItem>
                                     <MenuItem><Link to="/posts" className='Link'>Posts</Link></MenuItem>
+                                    <MenuItem><Link to="/users" className='Link'>Users</Link></MenuItem>
                                     <MenuItem><Button onClick={handleLogout} bg="black" color={"red"}>Logout</Button></MenuItem>
                                 </MenuList>
                             </Menu>

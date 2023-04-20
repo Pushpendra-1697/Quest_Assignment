@@ -5,9 +5,9 @@ import AllRoutes from "./Pages/AllRoutes";
 function App() {
   return (
     <div>
-      <Navbar/>
-      <AllRoutes/>
-      <Footer/>
+      <Navbar id="top" />
+      <AllRoutes />
+      <Footer />
     </div>
   );
 }
