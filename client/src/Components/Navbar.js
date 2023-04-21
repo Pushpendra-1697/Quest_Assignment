@@ -34,7 +34,7 @@ const Navbar = () => {
         <Box mb={["35%", "35%", "10%"]}>
             <Box bg={useColorModeValue('goldenrod', 'gray.900')} px={4} position={"fixed"} top={"0.1px"} w="100%" zIndex={"100"}>
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-                    <Link to="/"> <Image className='icon' w={"16px"} src="./logo.jpg" alt='logo' /> </Link>
+                    <Link to="/"> <Image className='icon' w={"30px"} src="./logo.jpg" alt='logo' /> </Link>
 
                     <Text><Link className='icon' to="/users">Users</Link></Text>
                     <Link className='icon' to="/posts"><i class="fa fa-user icon">Posts</i></Link>

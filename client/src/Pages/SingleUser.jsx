@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { backend_url } from './BackendURL';
 import { useSelector } from 'react-redux';
 import { BiLoaderCircle } from "react-icons/bi";
@@ -46,6 +46,7 @@ const SingleUser = () => {
                 <Heading m='1% 0' fontSize={'22px'}>Username: {name}</Heading>
                 <Text>Email: {email}</Text>
                 <Text mt='1%'>Login Time: {createdAt}</Text>
+                <Text color={'red'} fontSize={'22px'}><Link to={'/users'}>⬅️Back</Link></Text>
             </Container>
         </>
     );

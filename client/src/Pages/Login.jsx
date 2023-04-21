@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { backend_url } from './BackendURL';
 import { Box, Heading, useToast, Text } from '@chakra-ui/react';
 import jwt_decode from "jwt-decode";
 import { addUser } from '../redux/Users/user.action';
@@ -46,14 +45,11 @@ const Login = () => {
     navigate('/users');
   };
 
-
-
   return (
     <Box style={{ textAlign: 'center' }}>
       <Heading mb="10px" style={{ textAlign: "center" }} fontSize={["22px", '22px', '26px']}>Sign in to your account</Heading>
       <Text mb={["20px", '20px', '15px']}>to enjoy all of our cool features ✌️</Text>
-
-      <Box id="signInDiv"></Box>
+      <Box display={'flex'} justifyContent={'center'} alignItems={'center'} id="signInDiv"></Box>
     </Box>
   );
 }

@@ -4,7 +4,6 @@ import { getUsers } from '../redux/Users/user.action';
 import { Alert, AlertIcon, Box } from '@chakra-ui/react';
 import { BiLoaderCircle } from "react-icons/bi";
 import UserList from '../Components/UserList';
-import { Navigate } from 'react-router-dom';
 
 const Users = () => {
   const { loading, error, users } = useSelector((store) => store.userManager);
@@ -14,10 +13,6 @@ const Users = () => {
     dispatch(getUsers());
   }, []);
 
-
-  // if (localStorage.getItem('name') === null) {
-  //   return <Navigate to="/" />
-  // }
   return (
     <Box>
       {loading && (

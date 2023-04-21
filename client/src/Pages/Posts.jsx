@@ -1,6 +1,5 @@
 import { Alert, AlertIcon, Box, Button, Input, useToast } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
-import { Navigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { getPosts } from '../redux/Posts/post.action';
 import { BiLoaderCircle } from "react-icons/bi";
@@ -23,7 +22,6 @@ const Posts = () => {
   useEffect(() => {
     dispatch(getPosts(page, userName));
   }, [page, userName]);
-
 
   useEffect(() => {
     getSocialMediaPosts().then((res) => setData(res)).catch((err) => console.log(err));
@@ -54,11 +52,7 @@ const Posts = () => {
       console.log(err);
     }
   };
-
-
-  // if (localStorage.getItem('name') === null) {
-  //   return <Navigate to="/" />
-  // }
+  
   return (
     <Box>
       <Box textAlign={'center'}><Button onClick={seePostsHandle} bg='black' color={'white'}>See Posts</Button></Box>
@@ -88,7 +82,7 @@ const Posts = () => {
 
 
       {/* Pagination */}
-      <Box display={"flex"} alignItems="center" justifyContent={"center"} m="3% 0" gap={"5px"}>
+      <Box display={"flex"} alignItems="center" justifyContent={"center"} m={["6% 0","6% 0","3% 0"]} gap={"5px"}>
         <Button variant={"outline"} color="green" onClick={() => setPage(1)}>First</Button>
         <Button variant={"outline"} color="green" isDisabled={page <= 1} onClick={() => handlePage(-1)}>◀️PRE</Button>
         <Button variant={"outline"} color="red" isDisabled={true}>{page}</Button>
