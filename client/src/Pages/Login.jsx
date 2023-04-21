@@ -43,7 +43,6 @@ const Login = () => {
     localStorage.setItem('name', name);
     let payload = { name, email, picture };
     dispatch(addUser(payload));
-    console.log(payload);
     navigate('/users');
   };
 

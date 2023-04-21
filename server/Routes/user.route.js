@@ -31,9 +31,21 @@ userRouter.post('/post', async (req, res) => {
     try {
         const user = new UserModel(payload);
         await user.save();
-        res.status(201).send({ msg: 'Registered Successfully', user });
+        res.status(201).send({ msg: 'Stored in DB', user });
     } catch (err) {
         res.status(404).send({ msg: "Registation failed" });
+    }
+});
+
+
+//end points: "/users/delete" for delete particular user by id;
+userRouter.delete('/delete/:id', async (req, res) => {
+    const { id } = req.params;
+    try {
+        let user = await UserModel.findByIdAndDelete({ _id: id });
+        res.send(user);
+    } catch (err) {
+        res.status(404).send({ Error: err.message });
     }
 });
 

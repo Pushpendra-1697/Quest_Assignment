@@ -1,4 +1,4 @@
-import { ADD_USER, USER_ERROR, USER_LOADING, USER_SUCCESS } from "./user.type";
+import { ADD_USER, REMOVE_USER, USER_ERROR, USER_LOADING, USER_SUCCESS } from "./user.type";
 
 
 const initialState = {
@@ -33,6 +33,16 @@ export const userReducer = (state = initialState, { type, payload }) => {
                 ...state,
                 loading: false,
                 users: payload
+            }
+        }
+        case REMOVE_USER: {
+            let filteredUsers = state.users.filter(
+                (ele) => ele._id !== payload
+            )
+            return {
+                ...state,
+                loading: false,
+                users: filteredUsers
             }
         }
         default: {

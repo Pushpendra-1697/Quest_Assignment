@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ReduxProvider store={store}>
     <BrowserRouter>
-      <ChakraProvider toastOptions={{ defaultOptions: { position: 'top' } }}>
+      <ChakraProvider toastOptions={{ defaultOptions: { position: 'top-right' } }}>
         <App />
       </ChakraProvider>
     </BrowserRouter>
