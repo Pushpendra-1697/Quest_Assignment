@@ -1,4 +1,4 @@
-import { ADD_POST, POST_ERROR, POST_LOADING, POST_SUCCESS } from "./post.type";
+import { POST_ERROR, POST_LOADING, POST_SUCCESS } from "./post.type";
 
 
 const initialState = {
@@ -8,13 +8,6 @@ const initialState = {
 };
 export const postReducer = (state = initialState, { type, payload }) => {
     switch (type) {
-        case ADD_POST: {
-            return {
-                ...state,
-                loading: false,
-                posts: [...state.posts, payload]
-            }
-        }
         case POST_LOADING: {
             return {
                 ...state,

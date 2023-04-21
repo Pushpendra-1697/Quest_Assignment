@@ -5,7 +5,7 @@ const postSchema = new Schema(
     {
         title: { type: String, required: true },
         body: { type: String, required: true },
-        userId: { type: Number, required: true }
+        username: { type: String },
     },
     { versionKey: false, timestamps: true }
 );
