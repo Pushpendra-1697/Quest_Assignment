@@ -1,6 +1,10 @@
 # Quest_Assignment
 # Overview
-This application for sports enthusiasts to find and join sports events near them. With this app, users can browse a list of available events, view details about each event, and join the events they are interested in. The app allows users to create their own events and join other users after token-based authentication.
+Google OAuth is an open authorization framework that allows third-party applications to access user data without the need for the user to disclose their login credentials. With the Google OAuth project, users can log in to their favorite apps and websites using their Google account credentials, streamlining the login process and making it more convenient.
+
+In terms of social media, the Google OAuth project can be used to simplify the login process for social media platforms that support Google sign-in. For example, a user who wants to log in to a social media platform can simply select the "Sign in with Google" option and grant permission for the platform to access their Google account information via the secure authorization flow.
+
+This integration makes it easier for users to share content from social media platforms to other apps and websites that support Google OAuth, providing a more seamless and integrated social media experience. Overall, the Google OAuth project has been a game-changer in the world of online authentication and authorization, making it easier and more secure for users to access and share their information across a variety of platforms.
 
 # Frontend Verecel Deployed Link :
 https://playo-delta.vercel.app
