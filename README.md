@@ -7,7 +7,7 @@ In terms of social media, the Google OAuth project can be used to simplify the l
 This integration makes it easier for users to share content from social media platforms to other apps and websites that support Google OAuth, providing a more seamless and integrated social media experience. Overall, the Google OAuth project has been a game-changer in the world of online authentication and authorization, making it easier and more secure for users to access and share their information across a variety of platforms.
 
 # Frontend Verecel Deployed Link :
-https://playo-delta.vercel.app
+quest-sand.vercel.app
 # Backend Cyclic Deployed Link: 
 https://long-puce-anemone-toga.cyclic.app
 
