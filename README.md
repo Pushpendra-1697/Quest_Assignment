@@ -9,7 +9,7 @@ This integration makes it easier for users to share content from social media pl
 # Frontend Verecel Deployed Link :
 https://quest-sand.vercel.app/
 # Backend Cyclic Deployed Link: 
-https://long-puce-anemone-toga.cyclic.app
+https://long-puce-anemone-toga.cyclic.app/
 
 # Tech Stack :
 # A) Frontend :
